@@ -20,8 +20,8 @@ h1{
 
 .main {
   /*background-image: image("./images/understand.svg");*/
-  background-image: url('./images/flat-iron-building.png')
-  /*background-color: green;*/
+  /*background-image: url('./images/flat-iron-building.png')*/
+  background-color: green;
 }
 
 h2{
