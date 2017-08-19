@@ -107,13 +107,12 @@ img{
 /* END content -----------*/
 
 /* START article specifics -----------*/
-#phish .photo{
+#phish {
   /*background-color: pink;*/
-  background-image: url(./images/img-story-main.png)
+  background-image: url("./resources/images/img-story-main.png)
 }
 
-img {
-  src: "../images/img-story-main.png";
-}
+
+
 
 /* END article specifics -----------*/
