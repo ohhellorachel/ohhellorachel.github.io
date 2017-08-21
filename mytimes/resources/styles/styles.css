@@ -3,7 +3,7 @@ body {
   color: black; /*except in the logo`*/
   font-family: Georgia; /*except in the logo`*/
   font-size: 17px;
-margin: 0;
+  margin: 0;
 }
 
 span {
@@ -32,7 +32,7 @@ header {
   align-items: center;
 
   margin-top: -1px; /*hides text when scrolling*/
-  border-bottom: 1pt solid black;
+  border-bottom: 1px solid black;
 }
 
 nav {
@@ -40,6 +40,7 @@ nav {
   text-align: right;
   color: black;
   margin-right: 40px;
+  font-weight: bold;
 }
 
 .sections {
@@ -56,6 +57,15 @@ nav {
 
 #logo img{
   margin-right: 12px;
+}
+
+nav a:link, 
+nav a:visited{
+  color: black;
+}
+
+nav a:hover, nav a:active{
+  color: MediumAquamarine;
 }
 
 /* END header -----------*/
@@ -227,22 +237,37 @@ footer {
   font-weight: normal;
 }
 
-footer span{
-  font-weight: normal;
+footer a:link,
+footer a:visited{
+  color: black;
 }
 
-#copywrite {
-  display: block;
+footer a:hover,
+footer a:active{
+  color: white;
 }
 
-.footlogo {
+#footlogo{
   font-family: Georgia;
   font-size: 16px;
   font-weight: bold;
   color: white;
   border-right: 2px solid white;
   padding-right: 25px;
-  margin-right: 25px
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+#footlogo a:link,
+#footlogo a:visited,
+#footlogo a:link,
+#footlogo a:hover, {
+  color: white;
+  text-decoration: none;
+}
+
+#copywrite {
+  display: block;
 }
 
 /* END footer -----------*/
