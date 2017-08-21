@@ -61,14 +61,16 @@ nav {
 /* END header -----------*/
 
 
+
+
 /* START content -----------*/
-.container {      /* content container */
+.container {             /* content container */
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 100;
+  justify-content: flex-start;
   padding-top: 100px;
+  padding-left: 40px;
   align-self: center;;
   z-index: 10;
   height: 100%;
@@ -100,25 +102,21 @@ nav {
   width: 240px;
 }
 
-#main{              /* specific to main story*/
+#main{              /* specific to featured story*/
   display: block;
   width: 630px;
   height: 100%;
 }
 
-#main span {        /* specific to main story*/
+#main span {        /* specific to featured story*/
   font-size: 40px;
 }
 
-#smallstories {
+#smallstories {     /* specific to small stories under the featured story */
   height: 700px;
   width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.minimedium{
-  height: 600px;
 }
 
 .story{             /* normal story settings*/
@@ -152,19 +150,19 @@ nav {
   padding: 0;
 }
 
-.newsbites{
+.newsbites{         /* specific to news bites*/
   display: block;
   height: 100%;
   align-content: center;
 }
 
-.newsbites h4 {
+.newsbites h4 {     /* news bites headline*/
   font-size: 16px;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.newsbites span {
+.newsbites span {   /* news bites sections*/
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
@@ -176,7 +174,10 @@ nav {
 
 /* END content -----------*/
 
-/* START story layout & images -----------*/
+
+
+
+/* START story images -----------*/
 
 #phish{
   background-image: url("../images/img-story-main.png");
@@ -207,4 +208,41 @@ nav {
   width: 240px;
   height: 240px;
 }
-/* END story layout & images -----------*/
+/* END story images -----------*/
+
+
+/* START footer -----------*/
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  text-align: center;
+  height: 300px;
+  font-weight: normal;
+}
+
+footer span{
+  font-weight: normal;
+}
+
+#copywrite {
+  display: block;
+}
+
+.footlogo {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 25px;
+  margin-right: 25px
+}
+
+/* END footer -----------*/
