@@ -1,19 +1,19 @@
-/*just a test*/
 body {
-  color: black; /*except in the logo`*/
-  font-family: Georgia; /*except in the logo`*/
-  font-size: 17px;
+  color: black;          /* except in the logo, links & over photos */
+  font-family: Georgia;  /* except in the logo & nav */
+  font-size: 17px;       /* in all body text */
   margin: 0;
 }
 
 span {
-  font-weight: bold; /*all headlines are bold*/
+  font-weight: bold;    /* all headlines are bold */
 }
 
 /* START header -----------*/
 
 header {
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -31,12 +31,13 @@ header {
 
   align-items: center;
 
-  margin-top: -1px; /*hides text when scrolling*/
+  margin-top: -1px;      /* hides text when scrolling */
   border-bottom: 1px solid black;
 }
 
 nav {
   display: inline-block;
+  display: -webkit-inline-block;
   text-align: right;
   color: black;
   margin-right: 40px;
@@ -45,11 +46,13 @@ nav {
 
 .sections {
   display: inline-block;
+  display: -webkit-inline-block;
   padding: 20px 10px;
 }
 
 #logo{
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   color: MediumAquamarine;
   margin-left: 40px;
@@ -59,7 +62,7 @@ nav {
   margin-right: 12px;
 }
 
-nav a:link, 
+nav a:link,
 nav a:visited{
   color: black;
 }
@@ -77,6 +80,7 @@ nav a:hover, nav a:active{
 .container {             /* content container */
   width: 100%;
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
   justify-content: flex-start;
   padding-top: 100px;
@@ -157,11 +161,12 @@ nav a:hover, nav a:active{
   color: white;
   width: auto;
   text-align: center;
-  padding: 0;
+  padding: 20px;
 }
 
 .newsbites{         /* specific to news bites*/
   display: block;
+  display: -webkit-block;
   height: 100%;
   align-content: center;
 }
@@ -179,6 +184,7 @@ nav a:hover, nav a:active{
   background-color: whitesmoke;
   padding: 11px 20px;
   display: block;
+  display: -webkit-block;
   border-bottom: 1px solid black;
 }
 
@@ -224,16 +230,15 @@ nav a:hover, nav a:active{
 /* START footer -----------*/
 footer {
   display: flex;
+  display: -webkit-flex;
   flex-flow: column wrap;
-  align-items: center;
-  align-content: center;
   justify-content: center;
   background-color: MediumAquamarine;
-  margin: auto;
   font-family: Verdana;
   font-size: 12px;
   text-align: center;
-  height: 300px;
+  width: 100%;
+  height:300px;
   font-weight: normal;
 }
 
@@ -264,10 +269,6 @@ footer a:active{
 #footlogo a:hover, {
   color: white;
   text-decoration: none;
-}
-
-#copywrite {
-  display: block;
 }
 
 /* END footer -----------*/
