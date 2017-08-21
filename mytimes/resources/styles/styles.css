@@ -10,9 +10,9 @@ span {
   font-weight: bold; /*all headlines are bold*//
 }
 
-div{              /*for triaging purposes*/
+/*div{              /*for triaging purposes
   border: 1px solid grey;
-}
+}*/
 /* START header -----------*/
 
 header {
