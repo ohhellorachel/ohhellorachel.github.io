@@ -7,12 +7,9 @@ body {
 }
 
 span {
-  font-weight: bold; /*all headlines are bold*//
+  font-weight: bold; /*all headlines are bold*/
 }
 
-/*div{              /*for triaging purposes
-  border: 1px solid grey;
-}*/
 /* START header -----------*/
 
 header {
