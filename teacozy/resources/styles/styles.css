@@ -1,26 +1,42 @@
 body {
-  color: seashell;          /* except in the logo, links & over photos */
-  font-family: Helvetica;   /* except in the logo & nav */
-  font-size: 22;            /* in all body text */
+  color: seashell;
   background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
   margin: 0;
   text-align: center;
+  opacity: 0.9;
 }
 
 a {
-  color: seashell;    /* all links are seashell */
-  text-decoration: underline;
+  color: seashell;
+  text-decoration: none;
+}
+
+a:link, a:visited{
+  color: seashell;
+}
+
+a:hover, a:active{
+  color: #c2d8e6;
+}
+
+a:hover img {
+  opacity: 0.5;
+}
+
+h2, h3, h4, h5 {
+  margin: 0;
+  padding: 10px;
 }
 
 /* START header -----------*/
 
 header {
   display: flex;
-  display: -webkit-flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-
+  justify-content: space-between;
   height:69px;
   width: 100%;
 
@@ -31,13 +47,20 @@ header {
   align-items: center;
 
   margin-top: -1px;      /* hides text when scrolling */
-  margin-left: 10px;
-  margin-right: 10px;
   border-bottom: 1px solid seashell;
+}
+
+#logo img{
+  height: 50px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
 nav {
   text-align: right;
+  margin-right: 10px;
 }
 
 nav span{
@@ -45,24 +68,9 @@ nav span{
   padding 20px 10px;
 }
 
-#logo{
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  color: MediumAquamarine;
-}
-
-#logo img{
-  height: 50px;
-}
-
-nav a:link,
-nav a:visited{
-  color: seashell;
-}
-
-nav a:hover, nav a:active{
-  color: #c2d8e6;
+nav a{
+  padding-right: 20px;
+  text-decoration: underline;
 }
 
 /* END header -----------*/
@@ -70,62 +78,105 @@ nav a:hover, nav a:active{
 
 
 
-/* START content -----------*/
+/* START main content -----------*/
+
 .container {             /* content container */
   width: 1200px;
-  padding-top: 69px;
+  height: 100%;
   margin: auto;
   z-index: 10;
-  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
 }
 
-#mission {              /* mission section */
-  display: block;
-  width: 120px;
+.section{             /* shared by each section */
+  padding: 69px 0px;
+}
+
+.content{             /* shared by the content of each section */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.blackbkg {             /* shared by boxes with a black bkgrd  */
+  background-color: black;
+  vertical-align: middle;
+}
+
+/* mission section */
+
+#mission {
+  width: 1200px;
   height: 700px;
-  background-image: image("../images/img-mission-background.jpg");
-  padding-top: 70px;
+  background-image: url("../images/img-mission-background.jpg");
+  padding-top: 69px;
+}
+
+#mission .content {    /* specific to mission's content */
+  width: 100%;
+  height: 110px;
+  display: block;
+}
+
+/* featured section */
+
+#featured {
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: auto;
+}
+
+#featured .content{   /* specific to featured's content */
+  /*width: 1000px;*/
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tea {
+  padding: 15px;
+}
+
+.tea img {
+  height: 200px;
+  width: 300px;
+  margin: 0px;
+}
+
+/* location section */
+
+#locations {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  margin: auto;
+}
+
+#locations .content{
+
+}
+
+.place {            /* specific to the location boxes */
+  width: 270px;
+  height: 255px;
+  margin: 5px 20px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
 }
 
 
-
-/* END content -----------*/
-
-
-
-
-/* START story images -----------*/
-
-#phish{
-  background-image: url("../images/img-story-main.png");
-}
-
-#orca{
-
-}
-
-#spinback{
-  background-image: url("../images/img-story-2.png");
-}
-
-#fbi {
-
-}
-
-#memory{
-  background-image: url("../images/img-story-3.png");
-}
-
-#cats{
-  background-image: url("../images/img-story-1.png");
-}
-
-#cookie{
-  background-image: url("../images/img-news-bite.png");
-  width: 240px;
-  height: 240px;
-}
-/* END story images -----------*/
+/* END main content -----------*/
 
 
 /* START footer -----------*/
@@ -136,8 +187,18 @@ footer {
   justify-content: center;
   text-align: center;
   width: 100%;
-  height:200px;
+  margin: 0 20px;
   font-weight: bold;
+  background-color: violet;
+}
+
+#contactinfo {
+  height: 180px;
+  padding-top: 20px;
+}
+
+#copyright {
+  text-align: left;
 }
 
 /* END footer -----------*/
