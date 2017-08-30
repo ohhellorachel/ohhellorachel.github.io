@@ -35,7 +35,6 @@ h2, h3, h4, h5 {
 header {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   height:69px;
   width: 100%;
@@ -69,19 +68,16 @@ nav span{
 }
 
 nav a{
-  padding-right: 20px;
+  padding-left: 20px;
   text-decoration: underline;
 }
 
 /* END header -----------*/
 
 
-
-
 /* START main content -----------*/
 
 .container {             /* content container */
-  width: 1200px;
   height: 100%;
   margin: auto;
   z-index: 10;
@@ -97,7 +93,6 @@ nav a{
 .content{             /* shared by the content of each section */
   display: flex;
   align-items: center;
-  align-content: center;
   justify-content: center;
   vertical-align: middle;
 }
@@ -125,31 +120,21 @@ nav a{
 /* featured section */
 
 #featured {
-  display: block;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  margin: auto;
+  width: 1000px;
 }
 
 #featured .content{   /* specific to featured's content */
-  /*width: 1000px;*/
-  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
 }
 
-.tea {
+div.tea {
   padding: 15px;
 }
 
-.tea img {
-  height: 200px;
+img.tea  {
   width: 300px;
+  height: 200px;
   margin: 0px;
 }
 
@@ -157,13 +142,9 @@ nav a{
 
 #locations {
   background-image: url("../images/img-locations-background.jpg");
-  height: 500px;
   width: 1200px;
+  height: 500px;
   margin: auto;
-}
-
-#locations .content{
-
 }
 
 .place {            /* specific to the location boxes */
@@ -175,21 +156,23 @@ nav a{
   flex-flow: column;
 }
 
+div.place:hover {
+  opacity: .75;
+}
 
+h3.place, p.place{
+  opacity: 1;
+}
 /* END main content -----------*/
 
 
 /* START footer -----------*/
 footer {
   display: flex;
-  display: -webkit-flex;
   flex-flow: column wrap;
   justify-content: center;
-  text-align: center;
   width: 100%;
   margin: 0 20px;
-  font-weight: bold;
-  background-color: violet;
 }
 
 #contactinfo {
