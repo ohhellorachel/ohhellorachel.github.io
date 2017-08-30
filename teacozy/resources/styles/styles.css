@@ -172,7 +172,7 @@ footer {
   flex-flow: column wrap;
   justify-content: center;
   width: 100%;
-  margin: 0 20px;
+  margin: 0 20px 5px 20px;
 }
 
 #contactinfo {
