@@ -1,0 +1,111 @@
+html{
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.sectionholder {
+  width: 100%;
+  height: auto;
+  display: block;
+  justify-content: space-between;
+}
+
+.container {             /* content container */
+  display: block;
+  width: 970px;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+#logobar {
+  background-color: black;
+}
+
+#logo{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+}
+
+#logo img{
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: .5rem;
+}
+
+#mainheader{
+  background-image: url("../images/moto.jpeg");
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  flex-direction: row;
+}
+
+#maintext{
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2rem 3rem;
+  height: auto;
+  position: relative;
+  text-align: left;
+  top: 9rem;
+  margin-right: auto;
+  margin-left: left;
+}
+
+#maintext span {
+  font-weight: bold;
+}
+
+#maintext h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: .25rem;
+
+}
+
+#navbar {
+  background-color: firebrick;
+}
+
+nav {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  justify-content: space-around;
+}
+
+nav a:link, nav a:visited {
+  color: white;
+}
+
+nav a:hover, nav a:active {
+  color: antiquewhite;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline;
+}
+
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: 4rem auto 0 auto;
+}
