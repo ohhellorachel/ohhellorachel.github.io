@@ -108,4 +108,6 @@ footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
   margin: 4rem auto 0 auto;
+  background-color: black;
+  color: white;
 }
