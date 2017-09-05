@@ -17,11 +17,10 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  justify-content: space-between;
 }
 
 .container {             /* content container */
-  display: block;
+  display: flex;
   width: 970px;
   height: 100%;
   margin: 0 auto;
@@ -55,19 +54,19 @@ body {
   background-size: cover;
   background-position: center;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 #maintext{
   background-color: black;
   color: white;
+  height: auto;
   width: 20rem;
   padding: 2rem 3rem;
-  height: auto;
   position: relative;
   text-align: left;
   top: 9rem;
-  margin-right: auto;
-  margin-left: left;
+  display: block;
 }
 
 #maintext span {
@@ -78,7 +77,6 @@ body {
   font-weight: bold;
   font-size: 2rem;
   margin-top: .25rem;
-
 }
 
 #navbar {
@@ -102,6 +100,33 @@ nav a:hover, nav a:active {
 nav a {
   text-decoration: none;
   display: inline;
+}
+
+.featureditem{
+  width: 9rem;
+  height: auto;
+  margin: 3rem;
+  align-items: center;
+  text-align: center;
+}
+
+.featureditem img{
+  height: 9rem;
+  width: 9rem;
+  padding: 2rem;
+  background-color: white;
+  border: 4px solid black;
+}
+
+.featureditem h4{
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  margin-top: 0;
+  padding: 0.25rem inherit;
+  text-align: center;
+  height: 1.5rem;
+  width: 13.5rem;
 }
 
 footer {
